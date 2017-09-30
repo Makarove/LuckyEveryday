@@ -17,10 +17,10 @@ int main()
     cin >> user;
     cout << "Enter your PIN:" ;
     cin >> pin;
-    	if (user=="12345"&&pin=="54321")   //ÕËºÅÃÜÂëµÄÑéÖ¤ 
+    	if (user=="12345"&&pin=="54321")   //è´¦å·å¯†ç çš„éªŒè¯
 		menu();
     	else
-    	cout << "ÃÜÂë´íÎó";
+    	cout << "å¯†ç é”™è¯¯";
         
     int choice;
     cin >> choice;
@@ -39,7 +39,7 @@ int main()
 
 int menu()
 {
-    	system("cls");                     //ÇåÆÁ 
+    	system("cls");                     //æ¸…å±
     	cout << "Main menu:" << endl;
     	cout << "\t1 - View my balance\n";
     	cout << "\t2 - Withdraw cash\n";
@@ -50,7 +50,7 @@ int menu()
 
 void choice()
 {
-	        system("cls");                //ÇåÆÁ 
+	        system("cls");                //æ¸…å±
     	   	cout << "Withdrawl options:\n";
     	   	cout << "\t1 - $20\t 4 - $100" << endl;
     	   	cout << "\t2 - $40\t 5 - $200" << endl;
