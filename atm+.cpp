@@ -17,13 +17,12 @@ int main()
     cin >> user;
     cout << "Enter your PIN:" ;
     cin >> pin;
-    	if (user=="12345"&&pin=="54321")   //è´¦å·å¯†ç çš„éªŒè¯
+    	if (user=="12345"&&pin=="54321")   //ÕËºÅÃÜÂëµÄÑéÖ¤ 
 		menu();
     	else
-    	cout << "å¯†ç é”™è¯¯";
+    	cout << "ÃÜÂë´íÎó";
         
-    int choice;
-    cin >> choice;
+    int choice=menu();
     switch(choice)
     {
     	case(1):choice1();
@@ -39,18 +38,21 @@ int main()
 
 int menu()
 {
-    	system("cls");                     //æ¸…å±
+    	system("cls");                     //ÇåÆÁ 
+    	int choice;
     	cout << "Main menu:" << endl;
     	cout << "\t1 - View my balance\n";
     	cout << "\t2 - Withdraw cash\n";
     	cout << "\t3 - Deposit funds\n";
     	cout << "\t4 - Exit\n";
     	cout << "Enter a choice:";
+        cin >> choice;
+        return choice;
 }
 
-void choice()
+void choice2()
 {
-	        system("cls");                //æ¸…å±
+	        system("cls");                //ÇåÆÁ 
     	   	cout << "Withdrawl options:\n";
     	   	cout << "\t1 - $20\t 4 - $100" << endl;
     	   	cout << "\t2 - $40\t 5 - $200" << endl;
@@ -58,3 +60,20 @@ void choice()
     	   	cout << "Choose a withdrawal option (1-6):";
 }
     
+void choice1()
+{
+		system("cls");                //ÇåÆÁ 
+cout << "Õâ¸öÒ³Ãæ»¹Ã»ÓĞ×öºÃ";
+}
+
+void choice3()
+{
+	system("cls");                //ÇåÆÁ 
+cout << "Õâ¸öÒ³Ãæ»¹Ã»ÓĞ×öºÃ"; 
+}
+
+void choice4()
+{
+	system("cls");                //ÇåÆÁ 
+cout << "Õâ¸öÒ³Ãæ»¹Ã»ÓĞ×öºÃ"; 
+}
